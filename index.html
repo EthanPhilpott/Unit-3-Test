@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ethan Philpott">
+        <meta name="description" content="This is the homepage of a website in which you can fill in various forms">
+        <meta property="og:image" content="images/house.jpg">
+        <meta property="og:title" content="Forms Home Page">
+        <meta property="og:description" content="This is the page in which you access and log into your account">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    </head>  
+    
+    <body style="background-image: url(images/lightBackground.png);">
+        <header>
+            <nav>
+                <fieldset>
+                    <legend>Links to other pages</legend>
+                    <ul>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="survey.html">Survey</a></li>
+                    </ul>
+                </fieldset>
+            </nav>
+        
+            <h1>Welcome to my site!</h1>
+        </header>
+
+        <main>
+            <article>
+                <p>
+                    <em>On this site you can take our short quiz and then you can fill out our servey</em>
+                    <br><br>
+                    <strong>only way that we get better is hearing what you hvae to say!</strong>
+                </p>
+            </article>
+        
+            <h3>Log In Below</h3>
+            <form action="data.json" method="POST">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <ul>
+                        <li><label for="userName">User Name</label> 
+                            <input type="text" id="userName" name="user.userName">
+                        </li>
+                        <li><label for="password">Password</label> 
+                            <input type="password" id="password" name="user.password">
+                        </li>
+                        <li><label for="userIN">User Identification Number</label>
+                            <input type="password" id="userIN" name="user.userIN">
+                        </li>
+                        <li><label for="date">Todays Date</label>
+                            <input type="datetime" name="date" id="user.date">
+                        </li>
+                        <button type="submit">Submit</button>
+                    </ul>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+    
+</html>
